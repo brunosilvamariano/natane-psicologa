@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <!-- Organic background blobs -->
+  <ellipse cx="150" cy="200" rx="200" ry="180" fill="#8fa89e" opacity="0.12"/>
+  <ellipse cx="650" cy="200" rx="220" ry="160" fill="#c4a882" opacity="0.12"/>
+  <ellipse cx="400" cy="350" rx="300" ry="100" fill="#d4c4b0" opacity="0.15"/>
+
+  <!-- Two abstract figures sitting together -->
+  <!-- Figure 1 (therapist) -->
+  <circle cx="300" cy="185" r="28" fill="#d4b896" opacity="0.85"/>
+  <!-- Hair -->
+  <path d="M 274 175 Q 278 150 300 148 Q 322 150 326 175 Q 315 162 300 163 Q 285 162 274 175 Z" fill="#6a4838" opacity="0.8"/>
+  <path d="M 272 230 Q 265 200 274 175 Q 268 200 268 230 Z" fill="#6a4838" opacity="0.6"/>
+  <path d="M 328 230 Q 335 200 326 175 Q 332 200 332 230 Z" fill="#6a4838" opacity="0.6"/>
+  <!-- Body -->
+  <path d="M 278 210 Q 272 240 270 270 Q 282 278 300 278 Q 318 278 330 270 Q 328 240 322 210 Z" fill="#8fa89e" opacity="0.8"/>
+  <!-- Expression - calm smile -->
+  <path d="M 292 196 Q 300 203 308 196" stroke="#c4908a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Figure 2 (client) -->
+  <circle cx="500" cy="190" r="26" fill="#e0c9af" opacity="0.9"/>
+  <!-- Hair short -->
+  <path d="M 476 178 Q 480 158 500 156 Q 520 158 524 178 Q 512 165 500 166 Q 488 165 476 178 Z" fill="#4a3428" opacity="0.85"/>
+  <!-- Body -->
+  <path d="M 478 214 Q 472 244 470 272 Q 480 280 500 280 Q 520 280 530 272 Q 528 244 522 214 Z" fill="#c4a882" opacity="0.8"/>
+  <!-- Looking slightly down - thoughtful -->
+  <path d="M 492 203 Q 500 208 508 203" stroke="#c4908a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Connection line between them (warmth/bond) -->
+  <path d="M 328 240 Q 400 220 472 240" stroke="#8fa89e" stroke-width="1" opacity="0.4" fill="none" stroke-dasharray="5 8"/>
+  <!-- Heart/care symbol in middle -->
+  <path d="M 395 228 Q 400 220 405 228 Q 408 234 400 240 Q 392 234 395 228 Z" fill="#c4908a" opacity="0.4"/>
+
+  <!-- Room environment suggestions -->
+  <!-- Two chairs suggestion -->
+  <path d="M 260 278 L 260 320 L 340 320 L 340 278" stroke="#b09070" stroke-width="1.5" fill="rgba(192,162,130,0.15)" opacity="0.6"/>
+  <path d="M 460 280 L 460 320 L 540 320 L 540 280" stroke="#b09070" stroke-width="1.5" fill="rgba(192,162,130,0.15)" opacity="0.6"/>
+  <!-- Chair legs -->
+  <line x1="270" y1="320" x2="270" y2="340" stroke="#b09070" stroke-width="1.5" opacity="0.5"/>
+  <line x1="330" y1="320" x2="330" y2="340" stroke="#b09070" stroke-width="1.5" opacity="0.5"/>
+  <line x1="470" y1="320" x2="470" y2="340" stroke="#b09070" stroke-width="1.5" opacity="0.5"/>
+  <line x1="530" y1="320" x2="530" y2="340" stroke="#b09070" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Plant in corner -->
+  <rect x="670" y="290" width="16" height="50" rx="4" fill="#8a7060" opacity="0.5"/>
+  <path d="M 678 290 Q 695 260 720 270 Q 700 285 678 290 Z" fill="#8fa89e" opacity="0.6"/>
+  <path d="M 678 285 Q 655 255 632 268 Q 652 282 678 285 Z" fill="#8fa89e" opacity="0.55"/>
+  <path d="M 678 278 Q 665 248 688 240 Q 690 260 678 278 Z" fill="#8fa89e" opacity="0.5"/>
+
+  <!-- Window light suggestion -->
+  <rect x="100" y="80" width="80" height="120" rx="8" fill="#e8dfd0" opacity="0.25" stroke="#c4a882" stroke-width="1"/>
+  <line x1="140" y1="80" x2="140" y2="200" stroke="#c4a882" stroke-width="0.8" opacity="0.4"/>
+  <line x1="100" y1="140" x2="180" y2="140" stroke="#c4a882" stroke-width="0.8" opacity="0.4"/>
+  <!-- Light ray -->
+  <path d="M 180 90 L 280 200 L 260 210 L 160 95 Z" fill="#e8dfd0" opacity="0.1"/>
+
+  <!-- Floating particles -->
+  <circle cx="200" cy="150" r="3" fill="#c4a882" opacity="0.4"/>
+  <circle cx="600" cy="130" r="4" fill="#8fa89e" opacity="0.35"/>
+  <circle cx="700" cy="200" r="3" fill="#c4a882" opacity="0.4"/>
+  <circle cx="100" cy="300" r="4" fill="#8fa89e" opacity="0.3"/>
+  
+  <!-- Ground/floor line -->
+  <line x1="60" y1="340" x2="740" y2="340" stroke="#c4a882" stroke-width="0.8" opacity="0.25"/>
+</svg>

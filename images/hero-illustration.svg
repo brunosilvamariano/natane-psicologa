@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" fill="none">
+  <!-- Background warm gradient circle -->
+  <circle cx="300" cy="320" r="260" fill="url(#bg-grad)" opacity="0.18"/>
+  
+  <!-- Abstract botanical / organic shapes -->
+  <ellipse cx="420" cy="140" rx="80" ry="120" fill="#c8b8a2" opacity="0.35" transform="rotate(-25 420 140)"/>
+  <ellipse cx="160" cy="580" rx="90" ry="60" fill="#8fa89e" opacity="0.25" transform="rotate(15 160 580)"/>
+  
+  <!-- Flowing lines representing connection/waves -->
+  <path d="M 80 400 Q 180 320 300 380 Q 420 440 520 340" stroke="#8fa89e" stroke-width="1.5" opacity="0.5" fill="none"/>
+  <path d="M 60 440 Q 180 360 300 420 Q 420 480 540 370" stroke="#8fa89e" stroke-width="1" opacity="0.3" fill="none"/>
+  <path d="M 100 360 Q 200 280 300 340 Q 400 400 500 300" stroke="#c4a882" stroke-width="1" opacity="0.4" fill="none"/>
+
+  <!-- Central figure silhouette - sitting person in peaceful pose -->
+  <!-- Body -->
+  <ellipse cx="300" cy="500" rx="55" ry="18" fill="#c4a882" opacity="0.25"/>
+  <path d="M255 480 Q265 420 280 390 Q290 370 300 365 Q310 370 320 390 Q335 420 345 480 Z" fill="#b89a7a" opacity="0.7"/>
+  <!-- Torso -->
+  <path d="M 278 400 Q 270 440 268 470 Q 280 478 300 478 Q 320 478 332 470 Q 330 440 322 400 Z" fill="#c4a882" opacity="0.85"/>
+  <!-- Head -->
+  <circle cx="300" cy="348" r="32" fill="#d4b896" opacity="0.9"/>
+  <!-- Hair suggestion -->
+  <path d="M 270 335 Q 278 315 300 318 Q 322 315 330 335 Q 318 320 300 322 Q 282 320 270 335 Z" fill="#8a6a50" opacity="0.6"/>
+  <!-- Arms in gentle open pose -->
+  <path d="M 278 405 Q 240 420 225 445 Q 235 450 245 445 Q 255 425 278 418 Z" fill="#c4a882" opacity="0.75"/>
+  <path d="M 322 405 Q 360 420 375 445 Q 365 450 355 445 Q 345 425 322 418 Z" fill="#c4a882" opacity="0.75"/>
+  <!-- Legs crossed suggestion -->
+  <path d="M 268 470 Q 255 490 245 510 Q 265 520 285 510 Q 290 495 292 478 Z" fill="#b89a7a" opacity="0.7"/>
+  <path d="M 332 470 Q 345 490 355 510 Q 335 520 315 510 Q 310 495 308 478 Z" fill="#b89a7a" opacity="0.7"/>
+
+  <!-- Floating gentle dots / particles -->
+  <circle cx="180" cy="280" r="4" fill="#8fa89e" opacity="0.5"/>
+  <circle cx="420" cy="260" r="3" fill="#c4a882" opacity="0.5"/>
+  <circle cx="140" cy="480" r="5" fill="#8fa89e" opacity="0.3"/>
+  <circle cx="460" cy="500" r="4" fill="#c4a882" opacity="0.35"/>
+  <circle cx="220" cy="200" r="3" fill="#8fa89e" opacity="0.4"/>
+  <circle cx="380" cy="600" r="4" fill="#c4a882" opacity="0.3"/>
+  <circle cx="500" cy="420" r="3" fill="#8fa89e" opacity="0.4"/>
+  <circle cx="100" cy="350" r="3" fill="#c4a882" opacity="0.4"/>
+
+  <!-- Leaf/botanical elements -->
+  <path d="M 130 200 Q 155 170 175 185 Q 160 215 130 200 Z" fill="#8fa89e" opacity="0.45"/>
+  <path d="M 460 560 Q 490 535 505 555 Q 485 580 460 560 Z" fill="#8fa89e" opacity="0.4"/>
+  <path d="M 480 180 Q 500 155 515 175 Q 498 198 480 180 Z" fill="#c4a882" opacity="0.4"/>
+
+  <!-- Subtle circle outlines -->
+  <circle cx="300" cy="380" r="110" stroke="#8fa89e" stroke-width="0.8" opacity="0.2" fill="none" stroke-dasharray="4 8"/>
+  <circle cx="300" cy="380" r="150" stroke="#c4a882" stroke-width="0.6" opacity="0.15" fill="none" stroke-dasharray="3 12"/>
+
+  <defs>
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c8b8a2"/>
+      <stop offset="100%" stop-color="#8fa89e"/>
+    </radialGradient>
+  </defs>
+</svg>
