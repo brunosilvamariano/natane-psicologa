@@ -11,7 +11,7 @@
 'use strict';
 
 /* ── 1. NAV SCROLL ── */
-const nav     = document.getElementById('mainNav');
+const nav      = document.getElementById('mainNav');
 const toTopBtn = document.getElementById('toTop');
 
 const onScroll = () => {
@@ -32,23 +32,52 @@ toTopBtn.addEventListener('click', () => {
 const burger  = document.getElementById('navBurger');
 const mobMenu = document.getElementById('mobMenu');
 
+function openMenu() {
+  const scrollY = window.scrollY;
+  document.body.style.top = `-${scrollY}px`;
+  document.body.classList.add('no-scroll');
+
+  burger.classList.add('open');
+  burger.setAttribute('aria-expanded', true);
+  mobMenu.classList.add('open');
+  mobMenu.setAttribute('aria-hidden', false);
+}
+
+function closeMenu() {
+  const top = document.body.style.top;
+  document.body.classList.remove('no-scroll');
+  document.body.style.top = '';
+  window.scrollTo({ top: parseInt(top || '0') * -1, behavior: 'instant' });
+
+  burger.classList.remove('open');
+  burger.setAttribute('aria-expanded', false);
+  mobMenu.classList.remove('open');
+  mobMenu.setAttribute('aria-hidden', true);
+}
+
 burger.addEventListener('click', () => {
-  const isOpen = burger.classList.toggle('open');
-  burger.setAttribute('aria-expanded', isOpen);
-  mobMenu.classList.toggle('open', isOpen);
-  mobMenu.setAttribute('aria-hidden', !isOpen);
-  document.body.style.overflow = isOpen ? 'hidden' : '';
+  burger.classList.contains('open') ? closeMenu() : openMenu();
 });
 
-// Fecha o menu ao clicar em qualquer link ou no CTA
+// Fecha ao clicar em qualquer link ou CTA do menu
 mobMenu.querySelectorAll('.mob-link, .mob-cta').forEach(el => {
-  el.addEventListener('click', () => {
-    burger.classList.remove('open');
-    burger.setAttribute('aria-expanded', false);
-    mobMenu.classList.remove('open');
-    mobMenu.setAttribute('aria-hidden', true);
-    document.body.style.overflow = '';
-  });
+  el.addEventListener('click', closeMenu);
+});
+
+// Fecha ao pressionar Escape
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && mobMenu.classList.contains('open')) closeMenu();
+});
+
+// Fecha ao clicar fora do menu
+document.addEventListener('click', e => {
+  if (
+    mobMenu.classList.contains('open') &&
+    !mobMenu.contains(e.target) &&
+    !burger.contains(e.target)
+  ) {
+    closeMenu();
+  }
 });
 
 /* ── 4. AOS — ANIMATE ON SCROLL ──

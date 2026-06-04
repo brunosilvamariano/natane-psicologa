@@ -73,6 +73,16 @@ body {
   overflow-x: hidden;
 }
 
+/* Bloqueia scroll quando menu mobile está aberto.
+   position: fixed + width: 100% é necessário para iOS Safari,
+   onde overflow: hidden sozinho não impede o scroll por momentum.
+   O JS salva/restaura o scrollY para evitar o "salto" para o topo. */
+body.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 h1, h2, h3, h4 {
   font-family: var(--serif);
   font-weight: 500;
@@ -1390,9 +1400,6 @@ a.contact__card:hover .contact__card-icon {
 .to-top {
   position: fixed;
   bottom: calc(2rem + 54px + 12px);
-  /* 54px = altura do WhatsApp | 12px = gap entre eles         */
-  /* right centraliza o botão de 44px com o de 54px:           */
-  /* right do WhatsApp (2rem) + (54px - 44px) / 2 = 2rem + 5px */
   right: calc(2rem + 5px);
   width: 44px;
   height: 44px;
