@@ -61,6 +61,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -399,6 +400,7 @@ img, svg { max-width: 100%; display: block; }
   flex-direction: column;
   justify-content: center;
   pointer-events: none;
+  overflow: hidden;
 }
 .mob-menu.open {
   transform: translateX(0);
@@ -467,6 +469,7 @@ img, svg { max-width: 100%; display: block; }
   padding-bottom: 4rem;
   position: relative;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .hero__bg-shapes {
@@ -625,6 +628,7 @@ img, svg { max-width: 100%; display: block; }
   border-top: 1px solid var(--ivory-deep);
   border-bottom: 1px solid var(--ivory-deep);
   padding: 1.4rem 0;
+  max-width: 100%;
 }
 
 .tstrip__track {
@@ -895,6 +899,7 @@ img, svg { max-width: 100%; display: block; }
   background: var(--white);
   position: relative;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .areas__bg {
