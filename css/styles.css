@@ -1449,7 +1449,7 @@ a.contact__card:hover .contact__card-icon {
 
 @media (max-width: 800px) {
   .nav__links { display: none; }
-  .nav__cta span { display: none; }
+  .nav__cta { display: none; }
   .nav__burger { display: flex; }
 
   .hero__layout { grid-template-columns: 1fr; text-align: center; gap: 3rem; }
