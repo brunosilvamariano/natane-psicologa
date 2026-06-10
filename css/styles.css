@@ -691,8 +691,7 @@ img, svg { max-width: 100%; display: block; }
   border-radius: var(--r-xl);
   overflow: hidden;
  
-  border-radius: 50px 150px 55px;
-  border: 2px solid var(--sand-lt);
+  
 }
 .about__portrait {
   width: 100%;
