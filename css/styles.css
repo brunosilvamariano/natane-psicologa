@@ -690,7 +690,7 @@ img, svg { max-width: 100%; display: block; }
   position: relative;
   border-radius: var(--r-xl);
   overflow: hidden;
- 
+  border: 1px solid  var(--sage-dark);
   
 }
 .about__portrait {
