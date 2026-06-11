@@ -1,0 +1,65 @@
+/* ============================================================
+   NATANE GONÇALVES — faq.css
+============================================================ */
+
+.faq {
+  padding: var(--pad) 0;
+  background: var(--ivory);
+}
+
+.faq__layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.faq__desc {
+  font-size: 1rem;
+  color: var(--ink-dim);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--ivory-deep);
+}
+.faq__item:first-child { border-top: 1px solid var(--ivory-deep); }
+
+.faq__q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.4rem 0;
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+  transition: color var(--tr);
+  user-select: none;
+}
+.faq__q::-webkit-details-marker { display: none; }
+.faq__q:hover { color: var(--terracotta); }
+.faq__q i {
+  font-size: .9rem;
+  color: var(--sage);
+  flex-shrink: 0;
+  transition: transform var(--tr);
+}
+details[open] .faq__q i { transform: rotate(45deg); }
+
+.faq__a { padding: 0 0 1.4rem; }
+.faq__a p {
+  font-size: .95rem;
+  color: var(--ink-dim);
+  line-height: 1.8;
+}

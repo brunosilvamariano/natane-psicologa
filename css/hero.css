@@ -1,0 +1,131 @@
+/* ============================================================
+   NATANE GONÇALVES — hero.css
+============================================================ */
+
+.hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding-top: var(--nav-h);
+  padding-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  clip-path: ellipse(120% 100% at 50% 0%);
+  background: var(--ivory);
+}
+
+.hero__bg-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.hero__shape {
+  position: absolute;
+  border-radius: 50%;
+}
+.hero__shape--1 {
+  width: 600px; height: 600px;
+  top: -200px; right: -200px;
+  opacity: .15;
+}
+.hero__shape--2 {
+  width: 400px; height: 400px;
+  bottom: -100px; left: -100px;
+  opacity: .11;
+}
+.hero__shape--3 {
+  width: 200px; height: 200px;
+  top: 30%; left: 20%;
+  opacity: .1;
+}
+
+.hero__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5rem;
+  padding-block: 3rem;
+}
+
+.hero__text { max-width: 560px; }
+
+.hero__title {
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+  letter-spacing: -.01em;
+}
+.hero__title em {
+  font-style: italic;
+  color: var(--terracotta);
+}
+
+.hero__desc {
+  font-size: 1.1rem;
+  color: var(--ink-dim);
+  line-height: 1.75;
+  max-width: 46ch;
+  margin-bottom: 2rem;
+}
+
+.hero__btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Hero — visual */
+.hero__visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__card {
+  position: relative;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  border: 1px solid var(--terracotta);
+}
+
+.hero__illustration {
+  width: 100%;
+  max-width: 460px;
+  display: block;
+}
+
+.hero__badge {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  background: rgba(248, 244, 239, .92);
+  backdrop-filter: blur(12px);
+  padding: .8rem 1.2rem;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--ivory-dark);
+}
+.hero__badge i {
+  font-size: 1.4rem;
+  color: var(--sage);
+}
+.hero__badge strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: .95rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+.hero__badge span {
+  display: block;
+  font-size: .65rem;
+  color: var(--ink-dim);
+  letter-spacing: .08em;
+}

@@ -1,0 +1,110 @@
+/* ============================================================
+   NATANE GONÇALVES — footer.css
+============================================================ */
+
+.footer {
+  background: var(--ink);
+  color: rgba(248, 244, 239, .7);
+  padding: 5rem 0 2.5rem;
+}
+
+.footer__layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.footer__name {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--ivory);
+  line-height: 1;
+  margin-bottom: 3px;
+}
+.footer__tag {
+  display: block;
+  font-size: .6rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--sage-lt);
+  margin-bottom: 1.2rem;
+}
+
+.footer__desc {
+  font-size: .88rem;
+  line-height: 1.75;
+  max-width: 36ch;
+  margin-bottom: 1.5rem;
+}
+
+.footer__social {
+  display: flex;
+  gap: .8rem;
+}
+.footer__social a {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(248, 244, 239, .15);
+  border-radius: var(--r);
+  font-size: .95rem;
+  color: rgba(248, 244, 239, .6);
+  transition:
+    background    var(--tr),
+    color         var(--tr),
+    border-color  var(--tr);
+  position: relative;
+  z-index: 1;
+}
+.footer__social a:hover {
+  background: rgba(107, 143, 130, .3);
+  color: var(--ivory);
+  border-color: var(--sage-lt);
+}
+
+.footer__nav-title {
+  font-size: .6rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--sage-lt);
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.footer__nav ul,
+.footer__areas ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+.footer__nav a {
+  font-size: .88rem;
+  color: rgba(248, 244, 239, .55);
+  transition: color var(--tr);
+}
+.footer__nav a:hover { color: var(--ivory); }
+.footer__areas li {
+  font-size: .85rem;
+  color: rgba(248, 244, 239, .45);
+}
+
+.footer__bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(248, 244, 239, .08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.footer__bottom p { font-size: .78rem; }
+.footer__motto {
+  font-size: .7rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--sage-lt);
+}

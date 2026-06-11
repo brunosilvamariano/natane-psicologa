@@ -1,0 +1,77 @@
+/* ============================================================
+   NATANE GONÇALVES — about.css
+============================================================ */
+
+.about {
+  padding: var(--pad) 0;
+  background: var(--white);
+}
+
+.about__layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about__img-wrap {
+  position: relative;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  border: 1px solid var(--sage-dark);
+}
+.about__portrait {
+  width: 100%;
+  border-radius: var(--r-xl);
+  display: block;
+}
+
+.about__credential {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  margin-top: 1.2rem;
+  padding: .9rem 1.2rem;
+  background: var(--sage-bg);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--sage-dim);
+}
+.about__credential i {
+  font-size: 1.3rem;
+  color: var(--sage);
+}
+.about__credential strong {
+  display: block;
+  font-size: .85rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+.about__credential span {
+  font-size: .72rem;
+  color: var(--ink-dim);
+}
+
+.about__quote {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--ink-mid);
+  border-left: 2px solid var(--warm-sand);
+  padding-left: 1.5rem;
+  margin: 1.8rem 0;
+  line-height: 1.55;
+}
+
+.about__text {
+  font-size: 1.05rem;
+  color: var(--ink-mid);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.about__cta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

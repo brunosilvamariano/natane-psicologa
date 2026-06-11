@@ -1,0 +1,246 @@
+/* ============================================================
+   NATANE GONÇALVES — base.css
+   Reset, variáveis, base, tipografia, keyframes, botões, AOS
+============================================================ */
+
+/* ── 1. RESET & CUSTOM PROPERTIES ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ivory:        #f8f4ef;
+  --ivory-dark:   #ede6db;
+  --ivory-deep:   #e0d5c5;
+  --warm-sand:    #c8aa88;
+  --sand-lt:      #d9c4a8;
+  --sand-dim:     #b09070;
+
+  --sage:         #6b8f82;
+  --sage-lt:      #8aaa9d;
+  --sage-dim:     #a8c0b8;
+  --sage-bg:      #eef4f2;
+  --sage-dark:    #4a6e62;
+
+  --terracotta:   #a06850;
+  --terra-lt:     #c4896e;
+
+  --ink:          #1c1a17;
+  --ink-mid:      #3d3a34;
+  --ink-dim:      #7a7670;
+
+  --white:        #fdfcfa;
+
+  --serif:  'Playfair Display', Georgia, serif;
+  --sans:   'DM Sans', system-ui, sans-serif;
+
+  --nav-h:  76px;
+  --wrap:   min(1180px, 100% - 3rem);
+  --pad:    clamp(5rem, 10vw, 9rem);
+  --r:      6px;
+  --r-lg:   12px;
+  --r-xl:   20px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --tr:       0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ── 2. BASE ── */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+a    { text-decoration: none; color: inherit; }
+address { font-style: normal; }
+img, svg { max-width: 100%; display: block; }
+
+.skip-link {
+  position: fixed;
+  top: -100%;
+  left: 1rem;
+  background: var(--sage);
+  color: var(--white);
+  padding: .5rem 1rem;
+  z-index: 9999;
+  border-radius: var(--r);
+  font-size: .8rem;
+  transition: top .2s;
+}
+.skip-link:focus { top: 1rem; }
+
+/* ── 3. LAYOUT ── */
+.container {
+  width: var(--wrap);
+  margin-inline: auto;
+}
+
+/* ── 4. TIPOGRAFIA UTILITÁRIA ── */
+.overline {
+  display: block;
+  font-family: var(--sans);
+  font-size: .6rem;
+  font-weight: 500;
+  letter-spacing: .35em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.2;
+}
+.section-title em {
+  font-style: italic;
+  color: var(--terracotta);
+}
+
+.section-sub {
+  font-size: 1.05rem;
+  color: var(--ink-dim);
+  max-width: 52ch;
+  margin-top: .75rem;
+  line-height: 1.7;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+.section-head .section-sub { margin-inline: auto; }
+
+.section-rule {
+  width: 32px;
+  height: 2px;
+  background: var(--warm-sand);
+  margin: 1.5rem 0 2.2rem;
+  border-radius: 2px;
+}
+
+/* ── 5. KEYFRAMES ── */
+@keyframes scrollTicker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes orbitPulse {
+  0%, 100% { transform: scale(1);    opacity: .15; }
+  50%       { transform: scale(1.06); opacity: .25; }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+
+/* ── 6. ANIMAÇÕES AOS ── */
+[class*="aos-fade"] {
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity  .75s var(--ease-out),
+    transform .75s var(--ease-out);
+}
+
+[class*="aos-fade"].aos-in {
+  opacity: 1;
+  transform: none !important;
+  pointer-events: auto;
+}
+
+.aos-fade-up    { transform: translateY(30px); }
+.aos-fade-right { transform: translateX(-30px); }
+.aos-fade-left  { transform: translateX(30px); }
+
+.aos-d1 { transition-delay: .10s; }
+.aos-d2 { transition-delay: .20s; }
+.aos-d3 { transition-delay: .32s; }
+.aos-d4 { transition-delay: .44s; }
+
+@media (prefers-reduced-motion: reduce) {
+  [class*="aos-fade"] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    pointer-events: auto !important;
+  }
+  .tstrip__track    { animation: none !important; }
+  .hero__card       { animation: none !important; }
+  .hero__shape--1,
+  .hero__shape--2,
+  .hero__shape--3,
+  .orbit--1,
+  .orbit--2         { animation: none !important; }
+}
+
+/* ── 7. BOTÕES ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-family: var(--sans);
+  font-size: .7rem;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  padding: .95rem 2.2rem;
+  border: 1.5px solid transparent;
+  border-radius: var(--r);
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background     var(--tr),
+    border-color   var(--tr),
+    color          var(--tr),
+    transform      var(--tr),
+    box-shadow     var(--tr);
+}
+
+.btn--primary {
+  background: var(--sage);
+  color: var(--white);
+  border-color: var(--sage);
+}
+.btn--primary:hover {
+  background: var(--sage-dark);
+  border-color: var(--sage-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(107, 143, 130, .3);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: rgba(28, 26, 23, .22);
+}
+.btn--ghost:hover {
+  border-color: var(--ink);
+  transform: translateY(-2px);
+}

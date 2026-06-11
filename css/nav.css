@@ -1,0 +1,193 @@
+/* ============================================================
+   NATANE GONÇALVES — nav.css
+   Navegação desktop, burger, menu mobile
+============================================================ */
+
+/* ── NAV ── */
+.nav {
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  height: var(--nav-h);
+  z-index: 1000;
+  border-bottom: 1px solid transparent;
+  transition:
+    background    .5s var(--ease-out),
+    border-color  .5s,
+    box-shadow    .5s;
+}
+.nav.scrolled {
+  background: rgba(248, 244, 239, .95);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom-color: rgba(200, 170, 136, .2);
+  box-shadow: 0 2px 32px rgba(28, 26, 23, .06);
+}
+
+.nav__inner {
+  width: var(--wrap);
+  margin-inline: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+.nav__links a {
+  font-size: .72rem;
+  font-weight: 400;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  position: relative;
+  transition: color var(--tr);
+}
+.nav__links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--warm-sand);
+  transition: width var(--tr);
+}
+.nav__links a:hover        { color: var(--ink); }
+.nav__links a:hover::after { width: 100%; }
+
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .68rem;
+  font-weight: 500;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding: .65rem 1.4rem;
+  background: var(--sage);
+  color: var(--white);
+  border-radius: var(--r);
+  transition:
+    background  var(--tr),
+    transform   var(--tr),
+    box-shadow  var(--tr);
+}
+.nav__cta:hover {
+  background: var(--sage-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(107, 143, 130, .25);
+}
+
+.nav__burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: .4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav__burger span {
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform var(--tr), opacity var(--tr);
+}
+.nav__burger.open span:first-child { transform: translateY(6.5px) rotate(45deg); }
+.nav__burger.open span:last-child  { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* ── MENU MOBILE ── */
+.mob-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(400px, 100vw);
+  height: 100dvh;
+  background: var(--white);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform .5s var(--ease-out);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  pointer-events: none;
+  overflow: hidden;
+}
+.mob-menu.open {
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.mob-menu__inner {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.mob-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.mob-link {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--ink);
+  transition: color var(--tr);
+}
+.mob-link span {
+  font-family: var(--sans);
+  font-size: .6rem;
+  letter-spacing: .2em;
+  color: var(--sage);
+  font-weight: 400;
+  min-width: 24px;
+}
+.mob-link:hover { color: var(--terracotta); }
+
+.mob-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background: var(--sage);
+  color: var(--white);
+  border-radius: var(--r);
+  align-self: flex-start;
+  transition: background var(--tr);
+}
+.mob-cta:hover { background: var(--sage-dark); }

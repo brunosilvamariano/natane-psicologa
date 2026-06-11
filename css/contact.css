@@ -1,0 +1,144 @@
+/* ============================================================
+   NATANE GONÇALVES — contact.css
+============================================================ */
+
+.contact {
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  background: var(--white);
+}
+
+.contact__header {
+  text-align: center;
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+.contact__header .overline { margin-bottom: 0.8rem; }
+.contact__header .section-title { margin-bottom: 0; }
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(2rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.contact__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+  list-style: none;
+}
+
+.contact__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  padding: 1.2rem;
+  background: var(--ivory);
+  border: 1px solid var(--ivory-deep);
+  border-radius: var(--r-lg);
+  transition: all var(--tr);
+}
+a.contact__card { cursor: pointer; }
+a.contact__card:hover {
+  background: rgba(107, 143, 130, 0.06);
+  border-color: var(--sage-lt);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(107, 143, 130, 0.08);
+}
+
+.contact__card-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(107, 143, 130, 0.1);
+  border-radius: var(--r);
+  color: var(--sage);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: all var(--tr);
+}
+a.contact__card:hover .contact__card-icon {
+  background: rgba(107, 143, 130, 0.18);
+  color: var(--sage-dark);
+}
+
+.contact__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.contact__card-label {
+  display: block;
+  font-size: .65rem;
+  font-weight: 500;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+
+.contact__card-val {
+  font-size: .95rem;
+  color: var(--ink);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.contact__cta {
+  display: flex;
+  gap: .8rem;
+}
+
+.contact__right {
+  position: sticky;
+  top: 100px;
+}
+
+.contact__map-wrap {
+  background: var(--ivory);
+  border: 1px solid var(--ivory-deep);
+  border-radius: var(--r-lg);
+  padding: 1.5rem;
+  transition: all var(--tr);
+}
+.contact__map-wrap:hover { border-color: var(--sage-dim); }
+
+.contact__map-header { margin-bottom: 1rem; }
+
+.contact__map-title {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: .4rem;
+}
+
+.contact__map-address {
+  font-size: .9rem;
+  color: var(--ink-dim);
+  line-height: 1.4;
+  margin-bottom: .5rem;
+}
+
+.contact__map-note {
+  font-size: .75rem;
+  color: var(--ink-dim);
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.contact__map-frame {
+  width: 100%;
+  height: 280px;
+  border: 0;
+  border-radius: calc(var(--r-lg) - 6px);
+  overflow: hidden;
+}

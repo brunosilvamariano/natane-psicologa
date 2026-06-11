@@ -1,0 +1,89 @@
+/* ============================================================
+   NATANE GONÇALVES — areas.css
+============================================================ */
+
+.areas {
+  padding: var(--pad) 0;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.areas__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.area-card {
+  padding: 2rem 1.5rem;
+  background: var(--ivory);
+  border: 1px solid var(--ivory-deep);
+  border-radius: var(--r-lg);
+  transition:
+    transform    var(--tr),
+    box-shadow   var(--tr),
+    background   var(--tr);
+  cursor: default;
+}
+.area-card:hover {
+  background: var(--white);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(107, 143, 130, .1);
+}
+
+.area-card__icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: var(--sage-bg);
+  border-radius: var(--r);
+  font-size: 1.2rem;
+  color: var(--sage);
+  margin-bottom: 1rem;
+  transition: background var(--tr);
+}
+.area-card:hover .area-card__icon { background: var(--ivory-dark); }
+
+.area-card h3 {
+  font-size: .95rem;
+  font-weight: 500;
+  margin-bottom: .4rem;
+  color: var(--ink);
+}
+.area-card p {
+  font-size: .82rem;
+  color: var(--ink-dim);
+  line-height: 1.65;
+  margin-bottom: 1.2rem;
+}
+
+.area-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .78rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--sage);
+  text-decoration: none;
+  padding: .6rem 1rem;
+  border: 1.5px solid var(--sage-dim);
+  border-radius: var(--r);
+  transition: all var(--tr);
+  background: transparent;
+}
+.area-card__cta i {
+  font-size: .7rem;
+  transition: transform var(--tr);
+}
+.area-card__cta:hover {
+  background: var(--sage);
+  color: var(--white);
+  border-color: var(--sage);
+  gap: .7rem;
+}
+.area-card__cta:hover i { transform: translateX(3px); }

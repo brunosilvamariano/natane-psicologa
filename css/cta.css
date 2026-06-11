@@ -1,0 +1,48 @@
+/* ============================================================
+   NATANE GONÇALVES — cta.css
+============================================================ */
+
+.cta-section {
+  padding: var(--pad) 0;
+  background: linear-gradient(135deg, var(--sage-bg) 0%, var(--ivory-dark) 100%);
+}
+
+.cta-section__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.cta-section__title {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.cta-section__title em {
+  font-style: italic;
+  color: var(--terracotta);
+}
+
+.cta-section__sub {
+  font-size: 1.05rem;
+  color: var(--ink-dim);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  max-width: 44ch;
+}
+
+.cta-section__note {
+  font-size: .65rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-top: 1.2rem;
+}
+
+.cta-scene {
+  width: 100%;
+  border-radius: var(--r-xl);
+}

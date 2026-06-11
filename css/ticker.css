@@ -1,0 +1,44 @@
+/* ============================================================
+   NATANE GONÇALVES — ticker.css
+============================================================ */
+
+.tstrip {
+  overflow: hidden;
+  background: var(--ivory-dark);
+  border-bottom: 1px solid var(--ivory-deep);
+  padding: 1.4rem 0;
+  max-width: 100%;
+}
+
+.tstrip__track {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  width: max-content;
+  animation: scrollTicker 40s linear infinite;
+}
+
+.tstrip-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+.tstrip-item i {
+  font-size: 1.2rem;
+  color: var(--warm-sand);
+  flex-shrink: 0;
+}
+.tstrip-item p {
+  font-size: .85rem;
+  color: var(--ink-mid);
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.tstrip-div {
+  width: 1px;
+  height: 40px;
+  background: var(--ivory-deep);
+  flex-shrink: 0;
+}
