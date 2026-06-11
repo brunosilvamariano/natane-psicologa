@@ -1458,4 +1458,9 @@ a.contact__card:hover .contact__card-icon {
 
   .whatsapp-float { right: 1.25rem; bottom: 1.25rem; }
   .to-top         { right: calc(1.25rem + 5px); bottom: calc(1.25rem + 54px + 12px); }
+
+  .hero {
+  
+  clip-path: ellipse(200% 100% at 50% 0%);
+}
 }
