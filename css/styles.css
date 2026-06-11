@@ -900,15 +900,6 @@ img, svg { max-width: 100%; display: block; }
   max-width: 100%;
 }
 
-.areas__bg {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle at 80% 80%, var(--sage-bg) 0%, transparent 70%);
-  pointer-events: none;
-}
 
 .areas__grid {
   display: grid;
