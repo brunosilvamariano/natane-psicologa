@@ -112,9 +112,7 @@
   body { line-height: 1.6; }
 
   /* Hero */
-  .hero {
-    clip-path: ellipse(200% 100% at 50% 0%);
-  }
+ 
   .hero__title {
     font-size: clamp(1.75rem, 8vw, 2.4rem);
     line-height: 1.15;
