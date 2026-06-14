@@ -212,8 +212,10 @@
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/ticker.css">
   <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/signals.css">
   <link rel="stylesheet" href="css/process.css">
   <link rel="stylesheet" href="css/areas.css">
+  <link rel="stylesheet" href="css/benefits.css">
   <link rel="stylesheet" href="css/cta.css">
   <link rel="stylesheet" href="css/faq.css">
   <link rel="stylesheet" href="css/contact.css">
@@ -236,6 +238,7 @@
       <ul class="nav__links">
         <li><a href="#topo">Home</a></li>
         <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#sinais">Sinais</a></li>
         <li><a href="#processo">Processo</a></li>
         <li><a href="#areas">Áreas</a></li>
         <li><a href="#faq">FAQ</a></li>
@@ -261,12 +264,13 @@
   <div class="mob-menu__inner">
     <nav>
       <ul>
-        <li><a href="#topo"     class="mob-link"><span>00</span>Home</a></li>
-        <li><a href="#sobre"    class="mob-link"><span>01</span>Sobre</a></li>
-        <li><a href="#processo" class="mob-link"><span>02</span>Processo</a></li>
-        <li><a href="#areas"    class="mob-link"><span>03</span>Áreas</a></li>
-        <li><a href="#faq"      class="mob-link"><span>04</span>FAQ</a></li>
-        <li><a href="#contato"  class="mob-link"><span>05</span>Contato</a></li>
+        <li><a href="#topo"      class="mob-link"><span>00</span>Home</a></li>
+        <li><a href="#sobre"     class="mob-link"><span>01</span>Sobre</a></li>
+        <li><a href="#sinais"    class="mob-link"><span>02</span>Sinais</a></li>
+        <li><a href="#processo"  class="mob-link"><span>03</span>Processo</a></li>
+        <li><a href="#areas"     class="mob-link"><span>04</span>Áreas</a></li>
+        <li><a href="#faq"       class="mob-link"><span>05</span>FAQ</a></li>
+        <li><a href="#contato"   class="mob-link"><span>06</span>Contato</a></li>
       </ul>
     </nav>
     <a href="https://wa.me/5547996240418?text=Olá%20Natane!%20Gostaria%20de%20agendar%20uma%20sessão%20para%20meu%20filho."
@@ -279,7 +283,6 @@
 <main id="main">
 
   <!-- ─── HERO ─── -->
-  
   <div class="background" style="background: var(--ivory-dark);">
     <section id="topo" class="hero">
       <div class="hero__bg-shapes" aria-hidden="true">
@@ -369,7 +372,7 @@
     </div>
   </div>
 
-  <!-- ─── SOBRe TODAS A SEÇÕES SALVAS ─── -->
+  <!-- ─── SOBRE TODAS A SEÇÕES SALVAS ─── -->
   <section id="sobre" class="about">
     <div class="container">
       <div class="about__layout">
@@ -415,6 +418,76 @@
       </div>
     </div>
   </section>
+
+  <!-- ─── SINAIS DE ATENÇÃO ─── -->
+  <section id="sinais" class="signals" aria-labelledby="signals-title">
+    <div class="container">
+      <div class="section-head aos-fade-up">
+        <span class="overline">Para os pais</span>
+        <h2 class="section-title" id="signals-title">Quando é hora de <em>procurar ajuda?</em></h2>
+        <p class="section-sub">Alguns comportamentos fazem parte do desenvolvimento infantil. Outros podem indicar que a criança está enfrentando dificuldades emocionais que merecem atenção e acolhimento.</p>
+      </div>
+ 
+      <div class="signals__carousel" id="signalsCarousel" aria-label="Sinais de atenção">
+        <div class="signals__track" id="signalsTrack">
+          <div class="signal-card">
+            <div class="signal-card__img" aria-hidden="true"><img src="images/cards/mudanca_comportamento.png" alt=""></div>
+            <h3>Mudanças repentinas de comportamento</h3>
+          </div>
+          <div class="signal-card">
+            <div class="signal-card__img" aria-hidden="true"><img src="images/cards/ansiedade_medos.png" alt=""></div>
+            <h3>Ansiedade e medos intensos</h3>
+          </div>
+          <div class="signal-card">
+            <div class="signal-card__img" aria-hidden="true"><img src="images/cards/choro_irritabilidade.png" alt=""></div>
+            <h3>Choro frequente ou irritabilidade</h3>
+          </div>
+          <div class="signal-card">
+            <div class="signal-card__img" aria-hidden="true"><img src="images/cards/dificuldades_escolares.png" alt=""></div>
+            <h3>Dificuldades escolares</h3>
+          </div>
+          <div class="signal-card">
+            <div class="signal-card__img" aria-hidden="true"><img src="images/cards/isolamento_social.png" alt=""></div>
+            <h3>Isolamento social</h3>
+          </div>
+          <div class="signal-card">
+            <div class="signal-card__img" aria-hidden="true"><img src="images/cards/problemas_sono.png" alt=""></div>
+            <h3>Problemas de sono</h3>
+          </div>
+          <div class="signal-card">
+            <div class="signal-card__img" aria-hidden="true"><img src="images/cards/baixa_autoestima.png" alt=""></div>
+            <h3>Baixa autoestima</h3>
+          </div>
+          <div class="signal-card">
+            <div class="signal-card__img" aria-hidden="true"><img src="images/cards/dificuldade_emocoes.png" alt=""></div>
+            <h3>Dificuldade em lidar com emoções</h3>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="signals__dots" id="signalsDots" role="tablist" aria-label="Navegação do carrossel"></div>
+ 
+      <div class="signals__footer">
+        <p class="signals__note aos-fade-up">"Nem sempre é fácil entender o que uma criança está sentindo. Um olhar especializado pode ajudar."</p>
+        <a href="https://wa.me/5547996240418?text=Olá%20Natane!%20Percebi%20alguns%20sinais%20no%20comportamento%20do%20meu%20filho%20e%20gostaria%20de%20conversar."
+           class="btn btn--primary aos-fade-up aos-d1" target="_blank" rel="noopener">
+          <i class="bi bi-whatsapp"></i> Conversar pelo WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ─── TRANSIÇÃO: SINAIS → COMO FUNCIONA ─── -->
+  <div class="signals-transition" role="presentation">
+    <div class="container">
+      <div class="signals-transition__inner aos-fade-up">
+        <span class="signals-transition__line" aria-hidden="true"></span>
+        <p class="signals-transition__text">
+          Cada criança possui sua própria história. Por isso, o acompanhamento é construído com cuidado, respeitando seu tempo, suas emoções e sua forma única de se expressar.
+        </p>
+      </div>
+    </div>
+  </div>
 
   <!-- ─── PROCESSO ─── -->
   <section id="processo" class="process">
@@ -486,83 +559,101 @@
 
       <div class="areas__grid">
         <div class="area-card aos-fade-up">
-          <div class="area-card__icon"><i class="bi bi-wind"></i></div>
-          <h3>Ansiedade Infantil</h3>
+          <div class="area-card__img"><img src="images/cards/ansiedade.png" alt=""></div>
+          <div class="area-card__body">
+            <h3>Ansiedade Infantil</h3>
           <p>Medos excessivos, choro frequente, recusa escolar, tiques e sintomas físicos sem causa orgânica. Trabalhamos para que a criança desenvolva recursos internos de regulação.</p>
           <a href="https://wa.me/5547996240418?text=Olá%20Natane!%20Gostaria%20de%20conversar%20sobre%20ansiedade%20infantil." class="area-card__cta" target="_blank" rel="noopener">
             <span>Agendar sessão</span>
             <i class="bi bi-arrow-right"></i>
           </a>
-        </div>
+          </div>
+          </div>
         <div class="area-card aos-fade-up aos-d1">
-          <div class="area-card__icon"><i class="bi bi-lightning-charge"></i></div>
-          <h3>TDAH</h3>
+          <div class="area-card__img"><img src="images/cards/tdah.png" alt=""></div>
+          <div class="area-card__body">
+            <h3>TDAH</h3>
           <p>Dificuldade de concentração, impulsividade e hiperatividade. Oferecemos suporte terapêutico para ajudar a criança a compreender seu funcionamento e desenvolver estratégias.</p>
           <a href="https://wa.me/5547996240418?text=Olá%20Natane!%20Gostaria%20de%20conversar%20sobre%20TDAH%20infantil." class="area-card__cta" target="_blank" rel="noopener">
             <span>Agendar sessão</span>
             <i class="bi bi-arrow-right"></i>
           </a>
-        </div>
+          </div>
+          </div>
         <div class="area-card aos-fade-up aos-d2">
-          <div class="area-card__icon"><i class="bi bi-puzzle"></i></div>
-          <h3>Autismo (TEA)</h3>
+          <div class="area-card__img"><img src="images/cards/autismo.png" alt=""></div>
+          <div class="area-card__body">
+            <h3>Autismo (TEA)</h3>
           <p>Atendimento especializado para crianças no espectro autista, com foco no desenvolvimento das habilidades socioemocionais, comunicação e autonomia.</p>
           <a href="https://wa.me/5547996240418?text=Olá%20Natane!%20Gostaria%20de%20conversar%20sobre%20atendimento%20para%20TEA." class="area-card__cta" target="_blank" rel="noopener">
             <span>Agendar sessão</span>
             <i class="bi bi-arrow-right"></i>
           </a>
-        </div>
+          </div>
+          </div>
         <div class="area-card aos-fade-up aos-d3">
-          <div class="area-card__icon"><i class="bi bi-eye-slash"></i></div>
-          <h3>Medos &amp; Fobias</h3>
+          <div class="area-card__img"><img src="images/cards/medos.png" alt=""></div>
+          <div class="area-card__body">
+            <h3>Medos &amp; Fobias</h3>
           <p>Medo do escuro, de animais, de situações sociais ou de separação dos pais. Abordagem gradual e lúdica para ajudar a criança a enfrentar e superar seus medos.</p>
           <a href="https://wa.me/5547996240418?text=Olá%20Natane!%20Gostaria%20de%20conversar%20sobre%20medos%20e%20fobias%20infantis." class="area-card__cta" target="_blank" rel="noopener">
             <span>Agendar sessão</span>
             <i class="bi bi-arrow-right"></i>
           </a>
-        </div>
+          </div>
+          </div>
         <div class="area-card aos-fade-up">
-          <div class="area-card__icon"><i class="bi bi-book"></i></div>
-          <h3>Dificuldades de Aprendizagem</h3>
+          <div class="area-card__img"><img src="images/cards/aprendizagem.png" alt=""></div>
+          <div class="area-card__body">
+            <h3>Dificuldades de Aprendizagem</h3>
           <p>Baixo rendimento escolar, dificuldade de leitura, escrita e concentração. Avaliação e acompanhamento para potencializar o aprendizado de cada criança.</p>
           <a href="https://wa.me/5547996240418?text=Olá%20Natane!%20Gostaria%20de%20conversar%20sobre%20dificuldades%20de%20aprendizagem." class="area-card__cta" target="_blank" rel="noopener">
             <span>Agendar sessão</span>
             <i class="bi bi-arrow-right"></i>
           </a>
-        </div>
+          </div>
+          </div>
         <div class="area-card aos-fade-up aos-d1">
-          <div class="area-card__icon"><i class="bi bi-emoji-angry"></i></div>
-          <h3>Comportamento &amp; Emoções</h3>
+          <div class="area-card__img"><img src="images/cards/comportamento.png" alt=""></div>
+          <div class="area-card__body">
+            <h3>Comportamento &amp; Emoções</h3>
           <p>Agressividade, birras intensas, isolamento, desobediência e dificuldades de socialização. Trabalhamos o autocontrole e a inteligência emocional desde a infância.</p>
           <a href="https://wa.me/5547996240418?text=Olá%20Natane!%20Gostaria%20de%20conversar%20sobre%20comportamento%20infantil." class="area-card__cta" target="_blank" rel="noopener">
             <span>Agendar sessão</span>
             <i class="bi bi-arrow-right"></i>
           </a>
-        </div>
+          </div>
+          </div>
         <div class="area-card aos-fade-up aos-d2">
-          <div class="area-card__icon"><i class="bi bi-moon-stars"></i></div>
-          <h3>Luto &amp; Perdas</h3>
+          <div class="area-card__img"><img src="images/cards/luto.png" alt=""></div>
+          <div class="area-card__body">
+            <h3>Luto &amp; Perdas</h3>
           <p>Separação dos pais, perda de familiares ou mudanças significativas na rotina. Apoio para que a criança processe situações difíceis de forma saudável.</p>
           <a href="https://wa.me/5547996240418?text=Olá%20Natane!%20Gostaria%20de%20conversar%20sobre%20luto%20infantil." class="area-card__cta" target="_blank" rel="noopener">
             <span>Agendar sessão</span>
             <i class="bi bi-arrow-right"></i>
           </a>
-        </div>
+          </div>
+          </div>
         <div class="area-card aos-fade-up aos-d3">
-          <div class="area-card__icon"><i class="bi bi-house-heart"></i></div>
-          <h3>Orientação Parental</h3>
+          <div class="area-card__img"><img src="images/cards/orientacao.png" alt=""></div>
+          <div class="area-card__body">
+            <h3>Orientação Parental</h3>
           <p>Suporte e orientação para pais e cuidadores sobre como lidar com desafios do desenvolvimento infantil, comunicação saudável e fortalecimento do vínculo familiar.</p>
           <a href="https://wa.me/5547996240418?text=Olá%20Natane!%20Gostaria%20de%20conversar%20sobre%20orientação%20parental." class="area-card__cta" target="_blank" rel="noopener">
             <span>Agendar sessão</span>
             <i class="bi bi-arrow-right"></i>
           </a>
-        </div>
+          </div>
+          </div>
       </div>
     </div>
   </section>
 
   <!-- ─── CTA ─── -->
   <section class="cta-section">
+    <div class="cta-section__bg" aria-hidden="true"></div>
+    <div class="cta-section__overlay" aria-hidden="true"></div>
     <div class="container">
       <div class="cta-section__inner">
         <div class="cta-section__text">
@@ -579,7 +670,14 @@
           <p class="cta-section__note aos-fade-up aos-d3">Presencial · Sigilo total</p>
         </div>
         <div class="cta-section__visual aos-fade-left aos-d1">
-          <img src="images/contato.svg" alt="Ilustração de sessão terapêutica infantil" class="cta-scene">
+          <div class="cta-card">
+            <p class="cta-card__quote">Toda criança carrega uma história. Meu papel é ajudá-la a contá-la com segurança.</p>
+            <div class="cta-card__rule"></div>
+            <div class="cta-card__author">
+              <span class="cta-card__name">Natane Gonçalves</span>
+              <span class="cta-card__role">Psicóloga Infantil · CRP</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -807,5 +905,7 @@
 </a>
 
 <script src="js/script.js"></script>
+<script src="js/sinais.js"></script>
+<script src="js/paralax.js"></script>
 </body>
 </html>

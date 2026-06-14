@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#e8ede8"/><stop offset="100%" stop-color="#f0ebe4"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect y="360" width="800" height="140" fill="#ddd0bc" opacity="0.4"/>
+  <!-- Park setting suggestion -->
+  <ellipse cx="150" cy="260" rx="80" ry="100" fill="#8aac8a" opacity="0.25"/>
+  <ellipse cx="640" cy="240" rx="90" ry="110" fill="#8aac8a" opacity="0.2"/>
+  <!-- Family of 3: dad (left), child (middle), mom (right) -->
+  <!-- Dad -->
+  <path d="M195 130 Q240 112 285 130 L292 360 Q240 350 188 360 Z" fill="#7a8e88"/>
+  <circle cx="240" cy="106" r="38" fill="#c8906a"/>
+  <ellipse cx="240" cy="78" rx="38" ry="20" fill="#2e1e10"/>
+  <ellipse cx="208" cy="96" rx="14" ry="22" fill="#2e1e10"/>
+  <circle cx="228" cy="104" r="5" fill="#2a1a0c"/>
+  <circle cx="252" cy="104" r="5" fill="#2a1a0c"/>
+  <path d="M228 119 Q240 126 252 119" stroke="#2a1a0c" stroke-width="2" fill="none"/>
+  <!-- Dad left arm down, holding child's hand -->
+  <path d="M285 155 Q335 210 370 290" stroke="#c8906a" stroke-width="26" stroke-linecap="round" fill="none"/>
+  <!-- Dad right arm at side -->
+  <path d="M195 155 Q168 200 158 250" stroke="#c8906a" stroke-width="22" stroke-linecap="round" fill="none"/>
+
+  <!-- Child (center, smaller) -->
+  <path d="M352 235 Q390 220 428 235 L432 365 Q390 357 348 365 Z" fill="#a8c4b8"/>
+  <circle cx="390" cy="213" r="28" fill="#f0d4b4"/>
+  <ellipse cx="390" cy="192" rx="28" ry="14" fill="#5a3820"/>
+  <ellipse cx="366" cy="204" rx="10" ry="16" fill="#5a3820"/>
+  <circle cx="381" cy="211" r="4" fill="#3a2810"/>
+  <circle cx="399" cy="211" r="4" fill="#3a2810"/>
+  <circle cx="382" cy="209" r="1.5" fill="white"/>
+  <circle cx="400" cy="209" r="1.5" fill="white"/>
+  <path d="M381 222 Q390 228 399 222" stroke="#3a2810" stroke-width="2" fill="none"/>
+  <!-- Child arms held by parents -->
+  <path d="M352 252 Q320 270 300 290" stroke="#f0d4b4" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <path d="M428 252 Q460 270 480 290" stroke="#f0d4b4" stroke-width="18" stroke-linecap="round" fill="none"/>
+
+  <!-- Mom (right) -->
+  <path d="M468 140 Q512 122 556 140 L562 360 Q512 350 462 360 Z" fill="#b0a898"/>
+  <circle cx="512" cy="116" r="36" fill="#d4a880"/>
+  <ellipse cx="512" cy="90" rx="36" ry="20" fill="#3a2010"/>
+  <ellipse cx="482" cy="108" rx="13" ry="22" fill="#3a2010"/>
+  <ellipse cx="544" cy="108" rx="13" ry="22" fill="#3a2010"/>
+  <circle cx="500" cy="114" r="4.5" fill="#2e1a0a"/>
+  <circle cx="524" cy="114" r="4.5" fill="#2e1a0a"/>
+  <path d="M500 127 Q512 134 524 127" stroke="#2e1a0a" stroke-width="2" fill="none"/>
+  <!-- Mom arm holding child -->
+  <path d="M468 162 Q435 210 410 288" stroke="#d4a880" stroke-width="26" stroke-linecap="round" fill="none"/>
+  <path d="M556 162 Q584 206 594 254" stroke="#d4a880" stroke-width="22" stroke-linecap="round" fill="none"/>
+</svg>

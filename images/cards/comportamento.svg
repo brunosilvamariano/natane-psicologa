@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#eaecec"/><stop offset="100%" stop-color="#f0ebe4"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect y="360" width="800" height="140" fill="#dcd0bc" opacity="0.4"/>
+  <!-- Two children playing together -->
+  <!-- Child 1 (left) - reaching out, cooperative -->
+  <path d="M218 195 Q255 180 292 195 L298 355 Q255 346 212 355 Z" fill="#a8c4b8"/>
+  <circle cx="255" cy="172" r="34" fill="#f0d4b4"/>
+  <ellipse cx="255" cy="148" rx="34" ry="16" fill="#4a3020"/>
+  <ellipse cx="228" cy="164" rx="11" ry="19" fill="#4a3020"/>
+  <circle cx="244" cy="170" r="4" fill="#3a2810"/>
+  <circle cx="266" cy="170" r="4" fill="#3a2810"/>
+  <path d="M245 183 Q255 189 265 183" stroke="#3a2810" stroke-width="2" fill="none"/>
+  <!-- Arm reaching toward other child -->
+  <path d="M292 215 Q340 240 380 260" stroke="#f0d4b4" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <!-- Left arm hanging -->
+  <path d="M218 215 Q190 250 180 290" stroke="#f0d4b4" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- Legs -->
+  <path d="M235 355 Q228 395 220 420" stroke="#7a9e90" stroke-width="24" stroke-linecap="round" fill="none"/>
+  <path d="M275 355 Q282 395 290 420" stroke="#7a9e90" stroke-width="24" stroke-linecap="round" fill="none"/>
+
+  <!-- Child 2 (right) - receiving, smiling -->
+  <path d="M470 195 Q510 178 548 195 L554 355 Q510 346 464 355 Z" fill="#c4b898"/>
+  <circle cx="510" cy="170" r="34" fill="#ddb890"/>
+  <ellipse cx="510" cy="146" rx="34" ry="16" fill="#3a2818"/>
+  <ellipse cx="480" cy="162" rx="12" ry="20" fill="#3a2818"/>
+  <circle cx="498" cy="168" r="4" fill="#2e2010"/>
+  <circle cx="522" cy="168" r="4" fill="#2e2010"/>
+  <circle cx="499" cy="166" r="1.5" fill="white"/>
+  <circle cx="523" cy="166" r="1.5" fill="white"/>
+  <path d="M498 181 Q510 189 522 181" stroke="#2e2010" stroke-width="2" fill="none"/>
+  <!-- Arm reaching back -->
+  <path d="M470 215 Q430 240 395 260" stroke="#ddb890" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <path d="M548 215 Q576 250 588 290" stroke="#ddb890" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- Legs -->
+  <path d="M488 355 Q480 395 472 420" stroke="#b09878" stroke-width="24" stroke-linecap="round" fill="none"/>
+  <path d="M532 355 Q540 395 548 420" stroke="#b09878" stroke-width="24" stroke-linecap="round" fill="none"/>
+  <!-- Toy being shared in middle -->
+  <circle cx="390" cy="278" r="20" fill="#c8a870" opacity="0.8"/>
+  <circle cx="390" cy="278" r="12" fill="#d4b880" opacity="0.6"/>
+</svg>

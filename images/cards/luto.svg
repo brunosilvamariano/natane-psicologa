@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#dce4e8"/><stop offset="100%" stop-color="#ede8e0"/></linearGradient>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d0e4f0" stop-opacity="0.8"/><stop offset="100%" stop-color="#e8ece0" stop-opacity="0.3"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect y="340" width="800" height="160" fill="#d8ccba" opacity="0.4"/>
+  <!-- Window with soft light -->
+  <rect x="80" y="40" width="200" height="280" rx="6" fill="url(#win)"/>
+  <line x1="180" y1="40" x2="180" y2="320" stroke="#c0d0d8" stroke-width="3" opacity="0.6"/>
+  <line x1="80" y1="180" x2="280" y2="180" stroke="#c0d0d8" stroke-width="3" opacity="0.6"/>
+  <!-- Soft light beam from window -->
+  <path d="M80 40 L0 80 L0 380 L80 320 Z" fill="#fff8f0" opacity="0.15"/>
+  <!-- Adult (seated, comforting) -->
+  <path d="M440 155 Q485 138 530 155 L536 340 Q485 330 434 340 Z" fill="#9aada8"/>
+  <circle cx="485" cy="132" r="36" fill="#c8a078"/>
+  <ellipse cx="485" cy="106" rx="36" ry="18" fill="#2e1e0e"/>
+  <ellipse cx="454" cy="124" rx="12" ry="20" fill="#2e1e0e"/>
+  <!-- Warm, gentle expression -->
+  <path d="M474 130 Q477 126 481 130" stroke="#3a2410" stroke-width="2" fill="none"/>
+  <path d="M489 130 Q493 126 496 130" stroke="#3a2410" stroke-width="2" fill="none"/>
+  <path d="M474 143 Q485 149 496 143" stroke="#3a2410" stroke-width="1.5" fill="none"/>
+  <!-- Adult arm holding child -->
+  <path d="M440 185 Q385 220 360 280" stroke="#c8a078" stroke-width="28" stroke-linecap="round" fill="none"/>
+  <!-- Child leaning head against adult, sad but held -->
+  <path d="M322 220 Q355 206 388 220 L392 340 Q355 332 318 340 Z" fill="#b8cac4"/>
+  <circle cx="356" cy="200" r="30" fill="#f0d4b4"/>
+  <ellipse cx="356" cy="178" rx="30" ry="15" fill="#5a3820"/>
+  <ellipse cx="330" cy="192" rx="10" ry="18" fill="#5a3820"/>
+  <!-- Child sad eyes -->
+  <path d="M346 198 Q350 193 354 198" stroke="#4a2e18" stroke-width="2" fill="none"/>
+  <path d="M358 198 Q362 193 366 198" stroke="#4a2e18" stroke-width="2" fill="none"/>
+  <!-- Tear -->
+  <path d="M364 202 Q365.5 206 364 210" stroke="#8ab0c0" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M346 211 Q356 215 366 211" stroke="#4a2e18" stroke-width="1.5" fill="none"/>
+</svg>

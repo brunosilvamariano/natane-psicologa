@@ -1,10 +1,45 @@
 /* ============================================================
    NATANE GONÇALVES — cta.css
+   Parallax CTA — "Seu filho merece ser ouvido"
 ============================================================ */
 
 .cta-section {
-  padding: var(--pad) 0;
-  background: linear-gradient(135deg, var(--sage-bg) 0%, var(--ivory-dark) 100%);
+  position: relative;
+  overflow: hidden;
+  padding: clamp(7rem, 14vw, 11rem) 0;
+  isolation: isolate;
+}
+
+/* ── Camada de imagem parallax ── */
+.cta-section__bg {
+  position: absolute;
+  inset: -15%;           /* sobra vertical para o efeito deslizar */
+  background-image: url('../images/paralax.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  will-change: transform;
+  z-index: 0;
+  transform: translateY(0px);
+}
+
+/* ── Overlay para legibilidade ── */
+.cta-section__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(28, 26, 23, 0.55) 0%,
+      rgba(28, 26, 23, 0.70) 60%,
+      rgba(28, 26, 23, 0.55) 100%
+    );
+  z-index: 1;
+}
+
+/* ── Conteúdo ── */
+.cta-section .container {
+  position: relative;
+  z-index: 2;
 }
 
 .cta-section__inner {
@@ -14,35 +49,137 @@
   align-items: center;
 }
 
-.cta-section__title {
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
-  font-weight: 500;
-  color: var(--ink);
-  line-height: 1.2;
-  margin-bottom: 1rem;
+.cta-section__text {
+  color: var(--white);
 }
+
+.cta-section__title {
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 500;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+  color: var(--white);
+}
+
 .cta-section__title em {
   font-style: italic;
-  color: var(--terracotta);
+  color: var(--sage-dim);
 }
 
 .cta-section__sub {
   font-size: 1.05rem;
-  color: var(--ink-dim);
-  line-height: 1.75;
-  margin-bottom: 2rem;
+  color: rgba(253, 252, 250, 0.78);
+  line-height: 1.8;
+  margin-bottom: 2.2rem;
   max-width: 44ch;
 }
 
 .cta-section__note {
-  font-size: .65rem;
-  letter-spacing: .2em;
+  font-size: .62rem;
+  letter-spacing: .22em;
   text-transform: uppercase;
-  color: var(--sage);
+  color: rgba(253, 252, 250, 0.45);
   margin-top: 1.2rem;
 }
 
-.cta-scene {
-  width: 100%;
+/* Botão adaptado ao fundo escuro */
+.cta-section .btn--primary {
+  background: transparent;
+  color: var(--white);
+  border-color: rgba(253, 252, 250, 0.5);
+  backdrop-filter: blur(6px);
+}
+.cta-section .btn--primary:hover {
+  background: var(--sage);
+  border-color: var(--sage);
+  box-shadow: 0 12px 32px rgba(107, 143, 130, 0.35);
+}
+
+/* ── Visual (lado direito) — cartão minimalista flutuante ── */
+.cta-section__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-card {
+  background: rgba(253, 252, 250, 0.07);
+  border: 1px solid rgba(253, 252, 250, 0.15);
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
   border-radius: var(--r-xl);
+  padding: 2.4rem 2rem;
+  max-width: 320px;
+  width: 100%;
+}
+
+.cta-card__quote {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--white);
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+  opacity: 0.9;
+}
+
+.cta-card__quote::before {
+  content: '\201C';
+  font-size: 2.5rem;
+  color: var(--sage-dim);
+  line-height: 0;
+  vertical-align: -0.5rem;
+  margin-right: 0.2rem;
+  opacity: 0.6;
+}
+
+.cta-card__rule {
+  width: 28px;
+  height: 1.5px;
+  background: var(--sage-dim);
+  margin-bottom: 1.2rem;
+  opacity: 0.6;
+}
+
+.cta-card__author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.cta-card__name {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(253, 252, 250, 0.85);
+}
+
+.cta-card__role {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sage-dim);
+}
+
+/* ── Responsivo ── */
+@media (max-width: 768px) {
+  .cta-section__inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .cta-section__sub {
+    margin-inline: auto;
+  }
+
+  .cta-section__visual {
+    justify-content: center;
+  }
+
+  .cta-card {
+    max-width: 100%;
+  }
 }

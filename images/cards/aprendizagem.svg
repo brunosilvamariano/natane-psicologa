@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8ecec"/><stop offset="100%" stop-color="#f0ebe4"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Desk surface -->
+  <rect y="310" width="800" height="20" fill="#c8b898" opacity="0.8"/>
+  <rect y="330" width="800" height="170" fill="#e0d4c0" opacity="0.5"/>
+  <!-- Books stack on desk -->
+  <rect x="520" y="230" width="120" height="18" rx="3" fill="#8aacb8" opacity="0.9"/>
+  <rect x="525" y="212" width="110" height="18" rx="3" fill="#c8a870" opacity="0.9"/>
+  <rect x="518" y="194" width="125" height="18" rx="3" fill="#a8b8a8" opacity="0.9"/>
+  <!-- Open book on desk -->
+  <path d="M180 260 Q300 250 400 260 L400 310 Q300 318 180 308 Z" fill="#f5f0e8"/>
+  <path d="M400 260 Q500 250 620 260 L620 308 Q500 318 400 310 Z" fill="#f0ece4"/>
+  <!-- Text lines on book -->
+  <line x1="200" y1="275" x2="380" y2="272" stroke="#c0b8a8" stroke-width="2"/>
+  <line x1="200" y1="285" x2="375" y2="283" stroke="#c0b8a8" stroke-width="2"/>
+  <line x1="200" y1="295" x2="360" y2="293" stroke="#c0b8a8" stroke-width="2"/>
+  <line x1="418" y1="275" x2="600" y2="272" stroke="#c0b8a8" stroke-width="2"/>
+  <line x1="418" y1="285" x2="598" y2="283" stroke="#c0b8a8" stroke-width="2"/>
+  <line x1="418" y1="295" x2="580" y2="293" stroke="#c0b8a8" stroke-width="2"/>
+  <!-- Child sitting at desk, looking at book -->
+  <!-- Chair back -->
+  <rect x="340" y="270" width="80" height="8" rx="4" fill="#9a9080" opacity="0.5"/>
+  <!-- Body -->
+  <path d="M352 165 Q390 150 428 165 L434 300 Q390 292 346 300 Z" fill="#a8c4b8"/>
+  <!-- Head looking down at book -->
+  <circle cx="390" cy="143" r="35" fill="#f0d4b4"/>
+  <ellipse cx="390" cy="116" rx="35" ry="18" fill="#4a3020"/>
+  <ellipse cx="360" cy="132" rx="12" ry="20" fill="#4a3020"/>
+  <!-- Eyes looking down -->
+  <ellipse cx="378" cy="146" rx="5" ry="4" fill="#3a2810"/>
+  <ellipse cx="402" cy="146" rx="5" ry="4" fill="#3a2810"/>
+  <!-- Arms on desk / book -->
+  <path d="M352 195 Q320 240 290 270" stroke="#f0d4b4" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <path d="M428 195 Q460 240 490 270" stroke="#f0d4b4" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <!-- Pencil in hand -->
+  <line x1="295" y1="265" x2="270" y2="300" stroke="#c8a860" stroke-width="6" stroke-linecap="round"/>
+  <!-- Warm window light -->
+  <rect x="0" y="0" width="160" height="500" fill="#fff8f0" opacity="0.18"/>
+</svg>

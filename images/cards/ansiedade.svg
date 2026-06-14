@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d4e8e0"/><stop offset="100%" stop-color="#f0ece6"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8ddd0"/><stop offset="100%" stop-color="#d4c8b8"/></linearGradient>
+    <radialGradient id="light" cx="40%" cy="30%" r="60%"><stop offset="0%" stop-color="#fffdf8" stop-opacity="0.5"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+  </defs>
+  <!-- Background room -->
+  <rect width="800" height="500" fill="url(#sky)"/>
+  <rect y="320" width="800" height="180" fill="url(#floor)"/>
+  <!-- Wall art / soft window light -->
+  <rect x="520" y="40" width="180" height="240" rx="4" fill="#c8ddd5" opacity="0.4"/>
+  <rect x="530" y="50" width="160" height="220" rx="2" fill="#e8f2ee" opacity="0.5"/>
+  <!-- Soft rug -->
+  <ellipse cx="400" cy="370" rx="280" ry="60" fill="#c4b8a8" opacity="0.35"/>
+  <!-- Small couch / seat -->
+  <rect x="200" y="260" width="260" height="100" rx="18" fill="#a8b8b0"/>
+  <rect x="195" y="240" width="270" height="50" rx="14" fill="#b8c8c0"/>
+  <rect x="195" y="290" width="30" height="70" rx="8" fill="#8a9e96"/>
+  <rect x="435" y="290" width="30" height="70" rx="8" fill="#8a9e96"/>
+  <!-- Child sitting on couch, hugging knees (anxious posture) -->
+  <!-- Body -->
+  <ellipse cx="340" cy="265" rx="28" ry="32" fill="#e8c9a8"/>
+  <!-- Head -->
+  <circle cx="340" cy="228" r="26" fill="#f0d4b4"/>
+  <!-- Hair -->
+  <ellipse cx="340" cy="210" rx="26" ry="12" fill="#6b4c30"/>
+  <ellipse cx="320" cy="222" rx="10" ry="16" fill="#6b4c30"/>
+  <!-- Eyes closed / worried -->
+  <path d="M330 226 Q334 222 338 226" stroke="#5a3e28" stroke-width="2" fill="none"/>
+  <path d="M342 226 Q346 222 350 226" stroke="#5a3e28" stroke-width="2" fill="none"/>
+  <!-- Knees up -->
+  <ellipse cx="320" cy="285" rx="18" ry="14" fill="#e8c9a8"/>
+  <ellipse cx="360" cy="285" rx="18" ry="14" fill="#e8c9a8"/>
+  <!-- Arms around knees -->
+  <path d="M312 270 Q300 278 305 292" stroke="#e8c9a8" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M368 270 Q380 278 375 292" stroke="#e8c9a8" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <!-- Toy on floor -->
+  <circle cx="480" cy="345" r="18" fill="#d4a070" opacity="0.7"/>
+  <circle cx="480" cy="345" r="10" fill="#c49060" opacity="0.5"/>
+  <!-- Warm light overlay -->
+  <rect width="800" height="500" fill="url(#light)"/>
+  <!-- Soft vignette -->
+  <radialGradient id="vig" cx="50%" cy="50%" r="70%"><stop offset="60%" stop-color="transparent"/><stop offset="100%" stop-color="#0a0806" stop-opacity="0.25"/></radialGradient>
+  <rect width="800" height="500" fill="url(#vig)"/>
+</svg>

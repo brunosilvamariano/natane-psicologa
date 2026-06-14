@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8ecec"/><stop offset="100%" stop-color="#f0ebe4"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect y="350" width="800" height="150" fill="#ddd0bc" opacity="0.4"/>
+  <!-- Two versions of child side by side: calm vs agitated -->
+  <!-- Dividing line (soft) -->
+  <line x1="400" y1="60" x2="400" y2="460" stroke="#d0c8b8" stroke-width="2" stroke-dasharray="8,6" opacity="0.6"/>
+  <!-- Left: calm child sitting -->
+  <path d="M148 210 Q190 195 232 210 L236 355 Q190 346 144 355 Z" fill="#a8c4b8"/>
+  <circle cx="190" cy="186" r="32" fill="#f0d4b4"/>
+  <ellipse cx="190" cy="164" rx="32" ry="15" fill="#5a3820"/>
+  <circle cx="180" cy="184" r="4" fill="#3a2810"/>
+  <circle cx="200" cy="184" r="4" fill="#3a2810"/>
+  <path d="M180 197 Q190 203 200 197" stroke="#3a2810" stroke-width="2" fill="none"/>
+  <path d="M148 230 Q118 265 108 305" stroke="#f0d4b4" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <path d="M232 230 Q260 265 270 305" stroke="#f0d4b4" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- Right: agitated child standing arms out -->
+  <path d="M548 195 Q590 178 632 195 L638 358 Q590 348 542 358 Z" fill="#c4b898"/>
+  <circle cx="590" cy="170" r="32" fill="#ddb890"/>
+  <ellipse cx="590" cy="148" rx="32" ry="16" fill="#3a2018"/>
+  <!-- Frown / upset expression -->
+  <path d="M579 168 Q582 164 586 168" stroke="#2e1a0c" stroke-width="2" fill="none"/>
+  <path d="M594 168 Q598 164 602 168" stroke="#2e1a0c" stroke-width="2" fill="none"/>
+  <path d="M580 181 Q590 176 600 181" stroke="#2e1a0c" stroke-width="2" fill="none"/>
+  <!-- Arms raised agitated -->
+  <path d="M548 215 Q516 195 500 170" stroke="#ddb890" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <path d="M632 215 Q664 195 680 170" stroke="#ddb890" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <!-- Arrow between them showing change -->
+  <path d="M270 250 Q340 230 390 250" stroke="#8aaa96" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+</svg>

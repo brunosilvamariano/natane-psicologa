@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e4ecf0"/><stop offset="100%" stop-color="#f0ede8"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Floor -->
+  <rect y="360" width="800" height="140" fill="#ddd0be" opacity="0.45"/>
+  <!-- Colorful blocks/toys arranged neatly on floor -->
+  <rect x="200" y="340" width="50" height="50" rx="6" fill="#d4876a" opacity="0.8"/>
+  <rect x="258" y="340" width="50" height="50" rx="6" fill="#7aaa96" opacity="0.8"/>
+  <rect x="316" y="340" width="50" height="50" rx="6" fill="#c8a870" opacity="0.8"/>
+  <rect x="374" y="340" width="50" height="50" rx="6" fill="#8aacb8" opacity="0.8"/>
+  <rect x="432" y="340" width="50" height="50" rx="6" fill="#b89ac0" opacity="0.7"/>
+  <!-- Child sitting cross-legged, focused, calm -->
+  <!-- Shadow -->
+  <ellipse cx="400" cy="390" rx="70" ry="15" fill="#c0b0a0" opacity="0.25"/>
+  <!-- Legs cross-legged -->
+  <ellipse cx="360" cy="375" rx="50" ry="24" fill="#7a9e90" opacity="0.9" transform="rotate(-10 360 375)"/>
+  <ellipse cx="440" cy="375" rx="50" ry="24" fill="#7a9e90" opacity="0.9" transform="rotate(10 440 375)"/>
+  <!-- Body -->
+  <path d="M358 220 Q400 205 442 220 L448 360 Q400 350 352 360 Z" fill="#a8c4b8"/>
+  <!-- Arms reaching forward to toys -->
+  <path d="M358 260 Q320 300 285 340" stroke="#f0d4b4" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <path d="M442 260 Q480 300 515 340" stroke="#f0d4b4" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <!-- Head -->
+  <circle cx="400" cy="195" r="38" fill="#f0d4b4"/>
+  <!-- Hair -->
+  <ellipse cx="400" cy="166" rx="38" ry="20" fill="#5a3820"/>
+  <ellipse cx="368" cy="182" rx="12" ry="20" fill="#5a3820"/>
+  <ellipse cx="432" cy="182" rx="12" ry="20" fill="#5a3820"/>
+  <!-- Calm focused expression -->
+  <path d="M385 192 Q387 188 390 192" stroke="#4a2e18" stroke-width="2" fill="none"/>
+  <path d="M410 192 Q413 188 416 192" stroke="#4a2e18" stroke-width="2" fill="none"/>
+  <path d="M390 208 Q400 213 410 208" stroke="#4a2e18" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Soft light from window -->
+  <rect x="580" y="0" width="220" height="500" fill="#fffdf5" opacity="0.15"/>
+</svg>

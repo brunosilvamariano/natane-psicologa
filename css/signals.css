@@ -1,0 +1,205 @@
+/* ============================================================
+   NATANE GONÇALVES — signals.css  (card com foto no topo)
+============================================================ */
+
+/* ── SEÇÃO ── */
+.signals {
+  padding: var(--pad) 0 calc(var(--pad) * 0.6);
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.signals::before {
+  content: '';
+  position: absolute;
+  top: -120px; right: -120px;
+  width: 420px; height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(107, 143, 130, .07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ── CARROSSEL ── */
+.signals__carousel {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.signals__carousel:active { cursor: grabbing; }
+
+.signals__track {
+  display: flex;
+  gap: 1.25rem;
+  transition: transform .45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+/* ── CARD ── */
+.signal-card {
+  background: var(--white);
+  border: 1px solid var(--ivory-deep);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  flex: 0 0 calc((100% - 3 * 1.25rem) / 4);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition:
+    transform   var(--tr),
+    box-shadow  var(--tr),
+    border-color var(--tr);
+}
+
+.signal-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%; height: 2.5px;
+  background: linear-gradient(90deg, var(--sage), var(--warm-sand));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .4s var(--ease-out);
+}
+
+.signal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(107, 143, 130, .12);
+  border-color: rgba(107, 143, 130, .3);
+}
+
+.signal-card:hover::after { transform: scaleX(1); }
+
+/* ── FOTO NO TOPO ── */
+.signal-card__img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--ivory-dark);
+  flex-shrink: 0;
+}
+
+.signal-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s var(--ease-out);
+}
+
+.signal-card:hover .signal-card__img img {
+  transform: scale(1.06);
+}
+
+/* ── TEXTO ABAIXO ── */
+.signal-card h3 {
+  font-family: var(--sans);
+  font-size: .88rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.35;
+  padding: 1.1rem 1.2rem 1.3rem;
+}
+
+/* ── compat: icon legado ── */
+.signal-card__icon { display: none; }
+
+/* ── DOTS ── */
+.signals__dots {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 2rem;
+}
+
+.signals__dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--ivory-deep);
+  border: none; padding: 0;
+  cursor: pointer;
+  transition:
+    background .3s ease,
+    transform  .3s ease,
+    width      .35s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+
+.signals__dot:hover { background: var(--sage-dim); }
+
+.signals__dot--active {
+  background: var(--sage);
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* ── RODAPÉ ── */
+.signals__footer {
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.signals__note {
+  font-size: 1.05rem;
+  color: var(--ink-dim);
+  max-width: 52ch;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* ── TRANSIÇÃO ── */
+.signals-transition {
+  background: linear-gradient(135deg, var(--sage-bg) 0%, var(--ivory-dark) 100%);
+  padding: clamp(3rem, 6vw, 5rem) 0;
+  position: relative;
+}
+
+.signals-transition::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236b8f82' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.signals-transition__inner {
+  position: relative;
+  text-align: center;
+  max-width: 56ch;
+  margin-inline: auto;
+}
+
+.signals-transition__line {
+  display: block;
+  width: 1px; height: 48px;
+  background: linear-gradient(to bottom, transparent, var(--sage), transparent);
+  margin: 0 auto 2rem;
+}
+
+.signals-transition__text {
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+  font-style: italic;
+  color: var(--ink-mid);
+  line-height: 1.65;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .signal-card { flex: 0 0 calc((100% - 2 * 1.25rem) / 3); }
+}
+
+@media (max-width: 720px) {
+  .signal-card { flex: 0 0 calc((100% - 1.25rem) / 2); }
+}
+
+@media (max-width: 480px) {
+  .signal-card { flex: 0 0 85%; }
+}

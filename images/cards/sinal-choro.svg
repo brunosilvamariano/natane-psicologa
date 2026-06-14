@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e4e8ec"/><stop offset="100%" stop-color="#ede8e0"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect y="360" width="800" height="140" fill="#d8ccba" opacity="0.4"/>
+  <!-- Child sitting on floor crying -->
+  <!-- Knees up, hands covering face -->
+  <path d="M330 230 Q380 210 430 230 L438 380 Q380 370 322 380 Z" fill="#a8c4b8"/>
+  <circle cx="380" cy="206" r="36" fill="#f0d4b4"/>
+  <ellipse cx="380" cy="180" rx="36" ry="18" fill="#5a3820"/>
+  <ellipse cx="350" cy="196" rx="13" ry="20" fill="#5a3820"/>
+  <!-- Hands covering eyes -->
+  <ellipse cx="365" cy="210" rx="18" ry="12" fill="#f0d4b4" transform="rotate(-20 365 210)"/>
+  <ellipse cx="395" cy="210" rx="18" ry="12" fill="#f0d4b4" transform="rotate(20 395 210)"/>
+  <!-- Tears falling down cheeks -->
+  <path d="M360 222 Q358 230 360 238" stroke="#90b8cc" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M400 222 Q402 232 400 242" stroke="#90b8cc" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <ellipse cx="360" cy="239" rx="4" ry="5" fill="#90b8cc" opacity="0.6"/>
+  <ellipse cx="400" cy="243" rx="4" ry="5" fill="#90b8cc" opacity="0.6"/>
+  <!-- Arms going to face -->
+  <path d="M330 248 Q344 232 365 216" stroke="#f0d4b4" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <path d="M430 248 Q416 232 395 216" stroke="#f0d4b4" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <!-- Legs tucked -->
+  <ellipse cx="348" cy="380" rx="38" ry="18" fill="#7a9e90" transform="rotate(-5 348 380)"/>
+  <ellipse cx="412" cy="380" rx="38" ry="18" fill="#7a9e90" transform="rotate(5 412 380)"/>
+  <!-- Soft toy on floor nearby -->
+  <circle cx="520" cy="388" r="24" fill="#d4a870" opacity="0.6"/>
+  <circle cx="530" cy="374" r="14" fill="#d4a870" opacity="0.5"/>
+</svg>

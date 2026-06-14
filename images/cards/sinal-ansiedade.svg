@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e4e8ec"/><stop offset="100%" stop-color="#ede8e0"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect y="350" width="800" height="150" fill="#d8ccba" opacity="0.4"/>
+  <!-- Child hiding behind parent's leg / anxious posture -->
+  <!-- Parent leg -->
+  <rect x="290" y="200" width="70" height="300" rx="35" fill="#8a9e96" opacity="0.8"/>
+  <rect x="370" y="200" width="70" height="300" rx="35" fill="#8a9e96" opacity="0.7"/>
+  <!-- Parent torso and head -->
+  <path d="M278 80 Q340 58 402 80 L410 208 Q340 198 270 208 Z" fill="#9aada8"/>
+  <circle cx="340" cy="56" r="36" fill="#c8906a"/>
+  <ellipse cx="340" cy="30" rx="36" ry="18" fill="#2e1e10"/>
+  <!-- Child peeking from behind parent leg, worried -->
+  <path d="M412 260 Q445 245 478 260 L482 370 Q445 362 408 370 Z" fill="#a8c4b8"/>
+  <circle cx="445" cy="238" r="26" fill="#f0d4b4"/>
+  <ellipse cx="445" cy="218" rx="26" ry="13" fill="#5a3820"/>
+  <!-- Wide worried eyes -->
+  <circle cx="436" cy="236" r="5.5" fill="#3a2810"/>
+  <circle cx="454" cy="236" r="5.5" fill="#3a2810"/>
+  <circle cx="437" cy="234" r="2" fill="white"/>
+  <circle cx="455" cy="234" r="2" fill="white"/>
+  <path d="M437 248 Q445 244 453 248" stroke="#3a2810" stroke-width="1.5" fill="none"/>
+  <!-- Small hand clutching parent -->
+  <path d="M408 285 Q390 275 385 260" stroke="#f0d4b4" stroke-width="16" stroke-linecap="round" fill="none"/>
+</svg>

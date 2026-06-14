@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e0e4e8"/><stop offset="100%" stop-color="#ede8e0"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect y="360" width="800" height="140" fill="#d8ccba" opacity="0.35"/>
+  <!-- Background group of children playing far away (blurred/faded) -->
+  <circle cx="590" cy="240" r="22" fill="#c0b8a8" opacity="0.4"/>
+  <circle cx="630" cy="235" r="20" fill="#c0b8a8" opacity="0.35"/>
+  <circle cx="660" cy="242" r="22" fill="#c0b8a8" opacity="0.3"/>
+  <path d="M578 262 Q590 250 602 262 L606 360 Q590 353 574 360 Z" fill="#c0b8a8" opacity="0.3"/>
+  <path d="M618 258 Q630 246 642 258 L646 360 Q630 353 614 360 Z" fill="#c0b8a8" opacity="0.25"/>
+  <path d="M648 264 Q660 252 672 264 L675 360 Q660 354 645 360 Z" fill="#c0b8a8" opacity="0.2"/>
+  <!-- Alone child, sitting by window (left side) -->
+  <rect x="60" y="60" width="180" height="300" rx="8" fill="#d0dce4" opacity="0.4"/>
+  <line x1="150" y1="60" x2="150" y2="360" stroke="#c0ccd4" stroke-width="2" opacity="0.5"/>
+  <line x1="60" y1="210" x2="240" y2="210" stroke="#c0ccd4" stroke-width="2" opacity="0.5"/>
+  <!-- Soft window light -->
+  <rect x="60" y="60" width="180" height="300" fill="#fffcf8" opacity="0.12"/>
+  <!-- Child sitting alone, knees to chest -->
+  <path d="M178 248 Q220 232 262 248 L267 375 Q220 366 173 375 Z" fill="#a8c4b8"/>
+  <circle cx="220" cy="224" r="30" fill="#f0d4b4"/>
+  <ellipse cx="220" cy="202" rx="30" ry="15" fill="#5a3820"/>
+  <ellipse cx="194" cy="216" rx="11" ry="18" fill="#5a3820"/>
+  <!-- Sad but calm expression, looking toward window -->
+  <circle cx="210" cy="222" r="4" fill="#3a2810"/>
+  <circle cx="228" cy="222" r="4" fill="#3a2810"/>
+  <path d="M211 234 Q220 230 229 234" stroke="#3a2810" stroke-width="1.5" fill="none"/>
+  <!-- Knees up, arms around knees -->
+  <ellipse cx="198" cy="362" rx="36" ry="20" fill="#7a9e90"/>
+  <ellipse cx="240" cy="362" rx="36" ry="20" fill="#7a9e90"/>
+  <path d="M178 268 Q162 290 165 328" stroke="#f0d4b4" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <path d="M262 268 Q278 290 275 328" stroke="#f0d4b4" stroke-width="20" stroke-linecap="round" fill="none"/>
+</svg>

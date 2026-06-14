@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8ede8"/><stop offset="100%" stop-color="#f2ece4"/></linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fff8f0" stop-opacity="0.6"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect y="320" width="800" height="180" fill="#ddd0c0" opacity="0.4"/>
+  <!-- Couch -->
+  <rect x="80" y="250" width="500" height="120" rx="20" fill="#b8c4bc"/>
+  <rect x="75" y="230" width="510" height="60" rx="16" fill="#c8d4cc"/>
+  <rect x="75" y="268" width="38" height="100" rx="10" fill="#9aaca4"/>
+  <rect x="540" y="268" width="38" height="100" rx="10" fill="#9aaca4"/>
+  <!-- Adult (mother) sitting, arm around child -->
+  <!-- Adult body -->
+  <path d="M210 140 Q250 125 290 140 L298 262 Q250 254 202 262 Z" fill="#8a9e96"/>
+  <!-- Adult head -->
+  <circle cx="250" cy="118" r="34" fill="#d4a880"/>
+  <ellipse cx="250" cy="94" rx="34" ry="16" fill="#3a2010"/>
+  <ellipse cx="220" cy="110" rx="12" ry="20" fill="#3a2010"/>
+  <!-- Adult arm around child -->
+  <path d="M290 170 Q340 200 340 250" stroke="#d4a880" stroke-width="26" stroke-linecap="round" fill="none"/>
+  <!-- Child leaning into adult -->
+  <path d="M308 195 Q340 182 372 195 L376 265 Q340 258 304 265 Z" fill="#a8c4b8"/>
+  <circle cx="340" cy="174" r="28" fill="#f0d4b4"/>
+  <ellipse cx="340" cy="154" rx="28" ry="14" fill="#5a3820"/>
+  <ellipse cx="316" cy="166" rx="10" ry="18" fill="#5a3820"/>
+  <!-- Child eyes closed, safe expression -->
+  <path d="M330 172 Q334 168 338 172" stroke="#4a2e18" stroke-width="2" fill="none"/>
+  <path d="M342 172 Q346 168 350 172" stroke="#4a2e18" stroke-width="2" fill="none"/>
+  <path d="M331 183 Q340 188 349 183" stroke="#4a2e18" stroke-width="1.5" fill="none"/>
+  <!-- Warm light -->
+  <rect width="800" height="500" fill="#fff8f0" opacity="0.12"/>
+</svg>

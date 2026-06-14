@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e8ecec"/><stop offset="100%" stop-color="#f0ebe4"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect y="360" width="800" height="140" fill="#ddd0bc" opacity="0.35"/>
+  <!-- Emotion faces displayed on cards/wall (a common therapy tool) -->
+  <!-- Row of emotion circles -->
+  <circle cx="160" cy="160" r="50" fill="#d4e8d0" opacity="0.7"/>
+  <circle cx="160" cy="155" r="8" fill="#4a6840"/>
+  <circle cx="148" cy="152" r="8" fill="#4a6840"/>
+  <path d="M148 168 Q160 176 172 168" stroke="#4a6840" stroke-width="3" fill="none"/><!-- happy -->
+  
+  <circle cx="290" cy="160" r="50" fill="#f0e0c8" opacity="0.7"/>
+  <circle cx="290" cy="155" r="8" fill="#7a5030"/>
+  <circle cx="278" cy="152" r="8" fill="#7a5030"/>
+  <path d="M278 170 Q290 164 302 170" stroke="#7a5030" stroke-width="3" fill="none"/><!-- sad -->
+  <path d="M282 162 Q288 158 294 162" stroke="#90b0c0" stroke-width="2" fill="none"/>
+  
+  <circle cx="420" cy="160" r="50" fill="#f0dcd8" opacity="0.7"/>
+  <circle cx="420" cy="154" r="9" fill="#7a3020"/>
+  <circle cx="408" cy="150" r="9" fill="#7a3020"/>
+  <path d="M408 170 Q420 163 432 170" stroke="#7a3020" stroke-width="3" fill="none"/><!-- angry -->
+  <path d="M408 143 Q414 148 420 143" stroke="#7a3020" stroke-width="2.5" fill="none"/>
+  
+  <circle cx="550" cy="160" r="50" fill="#ece0f0" opacity="0.7"/>
+  <circle cx="550" cy="155" r="9" fill="#5a3870"/>
+  <circle cx="538" cy="152" r="9" fill="#5a3870"/>
+  <path d="M540 168 Q550 173 560 168" stroke="#5a3870" stroke-width="3" fill="none"/><!-- worried -->
+  
+  <!-- Child standing looking at the emotion cards, overwhelmed -->
+  <path d="M340 260 Q385 242 430 260 L438 380 Q385 370 332 380 Z" fill="#a8c4b8"/>
+  <circle cx="385" cy="235" r="34" fill="#f0d4b4"/>
+  <ellipse cx="385" cy="210" rx="34" ry="17" fill="#5a3820"/>
+  <ellipse cx="356" cy="226" rx="12" ry="20" fill="#5a3820"/>
+  <!-- Overwhelmed wide eyes looking at cards -->
+  <circle cx="374" cy="234" r="6" fill="#3a2810"/>
+  <circle cx="396" cy="234" r="6" fill="#3a2810"/>
+  <circle cx="375" cy="232" r="2" fill="white"/>
+  <circle cx="397" cy="232" r="2" fill="white"/>
+  <!-- Open mouth slightly -->
+  <path d="M376 248 Q385 254 394 248" stroke="#3a2410" stroke-width="2" fill="none"/>
+  <!-- Arms slightly raised (unsure gesture) -->
+  <path d="M340 278 Q312 290 300 315" stroke="#f0d4b4" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <path d="M430 278 Q458 290 470 315" stroke="#f0d4b4" stroke-width="20" stroke-linecap="round" fill="none"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8e4ec"/><stop offset="100%" stop-color="#f0ebe4"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect y="360" width="800" height="140" fill="#d8ccba" opacity="0.35"/>
+  <!-- Large mirror frame -->
+  <rect x="320" y="40" width="240" height="360" rx="120" fill="#c8c0b0" opacity="0.5"/>
+  <rect x="328" y="48" width="224" height="344" rx="112" fill="#e8e0d4" opacity="0.7"/>
+  <!-- Mirror surface reflection (faded, uncertain) -->
+  <circle cx="440" cy="200" r="38" fill="#d0b898" opacity="0.4"/>
+  <path d="M408 238 Q440 222 472 238 L478 355 Q440 346 402 355 Z" fill="#b0a890" opacity="0.3"/>
+  <!-- Mirror handle -->
+  <rect x="427" y="400" width="26" height="60" rx="13" fill="#b8b0a0" opacity="0.6"/>
+  <!-- Child standing before mirror, slouched posture, averted gaze -->
+  <path d="M138 200 Q178 183 218 200 L225 368 Q178 358 132 368 Z" fill="#a8c4b8"/>
+  <circle cx="178" cy="175" r="35" fill="#f0d4b4"/>
+  <ellipse cx="178" cy="150" rx="35" ry="17" fill="#4a3020"/>
+  <ellipse cx="150" cy="166" rx="12" ry="20" fill="#4a3020"/>
+  <!-- Eyes looking down / away -->
+  <ellipse cx="166" cy="176" rx="5" ry="4" fill="#3a2810"/>
+  <ellipse cx="190" cy="174" rx="5" ry="4" fill="#3a2810"/>
+  <!-- Slight frown -->
+  <path d="M167 188 Q178 184 189 188" stroke="#3a2810" stroke-width="1.5" fill="none"/>
+  <!-- Slouched shoulders -->
+  <path d="M138 220 Q108 250 100 290" stroke="#f0d4b4" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <path d="M218 220 Q246 252 254 290" stroke="#f0d4b4" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <!-- Question marks near head -->
+  <text x="230" y="165" font-family="Georgia" font-size="28" fill="#8a9e96" opacity="0.5" font-style="italic">?</text>
+  <text x="110" y="185" font-family="Georgia" font-size="20" fill="#8a9e96" opacity="0.4" font-style="italic">?</text>
+</svg>

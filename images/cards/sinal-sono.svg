@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2a3040"/><stop offset="100%" stop-color="#3a3028"/></linearGradient>
+    <radialGradient id="moonlight" cx="70%" cy="20%" r="50%"><stop offset="0%" stop-color="#d0c8a0" stop-opacity="0.2"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#moonlight)"/>
+  <!-- Moon through window -->
+  <rect x="530" y="30" width="200" height="260" rx="8" fill="#2a3848" opacity="0.8"/>
+  <circle cx="660" cy="120" r="52" fill="#d8cc88" opacity="0.85"/>
+  <circle cx="680" cy="100" r="48" fill="#2a3848" opacity="0.7"/>
+  <!-- Stars -->
+  <circle cx="570" cy="70" r="2.5" fill="#e8e0c0" opacity="0.8"/>
+  <circle cx="600" cy="50" r="2" fill="#e8e0c0" opacity="0.7"/>
+  <circle cx="550" cy="100" r="1.8" fill="#e8e0c0" opacity="0.6"/>
+  <circle cx="585" cy="130" r="2" fill="#e8e0c0" opacity="0.5"/>
+  <!-- Bed -->
+  <rect x="60" y="320" width="560" height="160" rx="12" fill="#5a4a3a" opacity="0.8"/>
+  <rect x="60" y="280" width="560" height="60" rx="10" fill="#4a3a2c" opacity="0.9"/>
+  <!-- Pillow -->
+  <ellipse cx="220" cy="316" rx="120" ry="38" fill="#ddd4c8" opacity="0.85"/>
+  <!-- Blanket / duvet -->
+  <path d="M60 340 Q340 315 620 340 L620 480 Q340 470 60 480 Z" fill="#8a9e96" opacity="0.7"/>
+  <path d="M60 340 Q340 326 620 340" stroke="#7a8e86" stroke-width="2" fill="none" opacity="0.5"/>
+  <!-- Child sleeping (profile) -->
+  <ellipse cx="220" cy="308" rx="44" ry="34" fill="#f0d4b4"/>
+  <ellipse cx="210" cy="282" rx="44" ry="22" fill="#5a3820"/>
+  <ellipse cx="176" cy="300" rx="16" ry="24" fill="#5a3820"/>
+  <!-- Closed eyes, peaceful -->
+  <path d="M202 306 Q210 300 218 306" stroke="#3a2410" stroke-width="2.5" fill="none"/>
+  <path d="M222 305 Q230 299 238 305" stroke="#3a2410" stroke-width="2.5" fill="none"/>
+  <!-- Soft smile -->
+  <path d="M204 318 Q214 325 224 318" stroke="#3a2410" stroke-width="1.5" fill="none"/>
+  <!-- Soft glow on child from moonlight -->
+  <ellipse cx="220" cy="308" rx="80" ry="60" fill="#d0c880" opacity="0.06"/>
+</svg>

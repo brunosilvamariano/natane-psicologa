@@ -1,5 +1,5 @@
 /* ============================================================
-   NATANE GONÇALVES — areas.css
+   NATANE GONÇALVES — areas.css  (card com foto no topo)
 ============================================================ */
 
 .areas {
@@ -7,7 +7,6 @@
   background: var(--white);
   position: relative;
   overflow: hidden;
-  max-width: 100%;
 }
 
 .areas__grid {
@@ -16,48 +15,67 @@
   gap: 1.5rem;
 }
 
+/* ── CARD ── */
 .area-card {
-  padding: 2rem 1.5rem;
-  background: var(--ivory);
+  background: var(--white);
   border: 1px solid var(--ivory-deep);
   border-radius: var(--r-lg);
+  overflow: hidden;                 /* foto sangra até as bordas */
+  display: flex;
+  flex-direction: column;
   transition:
-    transform    var(--tr),
-    box-shadow   var(--tr),
-    background   var(--tr);
+    transform   var(--tr),
+    box-shadow  var(--tr);
   cursor: default;
 }
+
 .area-card:hover {
-  background: var(--white);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(107, 143, 130, .1);
+  transform: translateY(-5px);
+  box-shadow: 0 16px 48px rgba(107, 143, 130, .14);
 }
 
-.area-card__icon {
-  width: 44px;
-  height: 44px;
-  display: grid;
-  place-items: center;
-  background: var(--sage-bg);
-  border-radius: var(--r);
-  font-size: 1.2rem;
-  color: var(--sage);
-  margin-bottom: 1rem;
-  transition: background var(--tr);
+/* ── FOTO NO TOPO ── */
+.area-card__img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--ivory-dark);   /* placeholder enquanto carrega */
+  flex-shrink: 0;
 }
-.area-card:hover .area-card__icon { background: var(--ivory-dark); }
+
+.area-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s var(--ease-out);
+}
+
+.area-card:hover .area-card__img img {
+  transform: scale(1.05);
+}
+
+/* ── CONTEÚDO ABAIXO DA FOTO ── */
+.area-card__body {
+  padding: 1.4rem 1.4rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 
 .area-card h3 {
   font-size: .95rem;
   font-weight: 500;
-  margin-bottom: .4rem;
+  margin-bottom: .45rem;
   color: var(--ink);
 }
+
 .area-card p {
   font-size: .82rem;
   color: var(--ink-dim);
   line-height: 1.65;
   margin-bottom: 1.2rem;
+  flex: 1;
 }
 
 .area-card__cta {
@@ -70,20 +88,36 @@
   text-transform: uppercase;
   color: var(--sage);
   text-decoration: none;
-  padding: .6rem 1rem;
+  padding: .55rem .95rem;
   border: 1.5px solid var(--sage-dim);
   border-radius: var(--r);
   transition: all var(--tr);
   background: transparent;
+  align-self: flex-start;
 }
+
 .area-card__cta i {
   font-size: .7rem;
   transition: transform var(--tr);
 }
+
 .area-card__cta:hover {
   background: var(--sage);
   color: var(--white);
   border-color: var(--sage);
   gap: .7rem;
 }
+
 .area-card__cta:hover i { transform: translateX(3px); }
+
+/* ── compat: icon legado ── */
+.area-card__icon { display: none; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1100px) {
+  .areas__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .areas__grid { grid-template-columns: 1fr; }
+}
